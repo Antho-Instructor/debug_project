@@ -1,7 +1,7 @@
-import { createContext, useState, useContext, useEffect, useMemo } from "react";
+import { createContext, useState, useEffect, useMemo } from "react";
 import { filterJobs } from "../utils/filterJobs";
 
-const JobContext = createContext(null);
+export const JobContext = createContext(null);
 
 export const JobProvider = ({ children }) => {
 	const [jobs, setJobs] = useState([]);
@@ -58,8 +58,4 @@ export const JobProvider = ({ children }) => {
 			{children}
 		</JobContext.Provider>
 	);
-};
-
-export const useJobs = () => {
-	return useContext(JobContext);
 };

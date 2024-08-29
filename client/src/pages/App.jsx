@@ -1,7 +1,7 @@
 import Header from "../components/Header";
 import Filter from "../components/Filter";
 import Job from "../components/Job";
-import { useJobs } from "../contexts/JobContext";
+import { useJobs } from "../hooks/useJobs";
 
 function App() {
 	const { filteredJobs } = useJobs();

@@ -1,6 +1,6 @@
 import style from "./filter.module.css";
 import FilterTag from "../FilterTag";
-import { useJobs } from "../../contexts/JobContext";
+import { useJobs } from "../../hooks/useJobs";
 
 function Filter() {
 	const { filters, removeFilter, removeAllFilters } = useJobs();

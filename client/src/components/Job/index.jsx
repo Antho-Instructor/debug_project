@@ -1,6 +1,6 @@
 import Label from "../Label";
 import Tag from "../Tag";
-import { useJobs } from "../../contexts/JobContext";
+import { useJobs } from "../../hooks/useJobs";
 import style from "./job.module.css";
 function Job({ job }) {
 	const { addFilter } = useJobs();
