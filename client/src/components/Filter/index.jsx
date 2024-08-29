@@ -1,7 +1,9 @@
 import style from "./filter.module.css";
 import FilterTag from "../FilterTag";
+import { useJobs } from "../../contexts/JobContext";
 
-function Filter({ filters, removeFilter, removeAllFilters }) {
+function Filter() {
+	const { filters, removeFilter, removeAllFilters } = useJobs();
 	const getMarginBottom = (length) => {
 		if (length === 0) return "0px";
 		if (length <= 2) return "8rem";

@@ -1,6 +1,6 @@
 <h1 align="center">Bienvenue sur debug_project 👋</h1>
 
-ks<p>
+<p>
   <a href="https://twitter.com/Gorski_anthony" target="_blank">
     <img alt="Twitter: Gorski_anthony" src="https://img.shields.io/twitter/follow/Gorski_anthony.svg?style=social" />
   </a>

@@ -1,7 +1,10 @@
 import Label from "../Label";
 import Tag from "../Tag";
+import { useJobs } from "../../contexts/JobContext";
 import style from "./job.module.css";
-function Job({ job, addFilter }) {
+function Job({ job }) {
+	const { addFilter } = useJobs();
+
 	return (
 		<div
 			className={`${style.job_card} ${
