@@ -1,0 +1,37 @@
+import style from "./filter.module.css";
+import FilterTag from "../FilterTag";
+
+function Filter({ filters, removeFilter, removeAllFilters }) {
+	const getMarginBottom = (length) => {
+		if (length === 0) return "0px";
+		if (length <= 2) return "8rem";
+		if (length <= 4) return "13rem";
+		if (length <= 6) return "18rem";
+		return "30rem";
+	};
+	return (
+		<div style={{ marginBottom: getMarginBottom(filters.length) }}>
+			{filters.length !== 0 && (
+				<section className={style.container}>
+					<div className={style.all__tags}>
+						{filters.map((filter) => (
+							<FilterTag
+								key={filter}
+								label={filter}
+								onRemove={() => removeFilter(filter)}
+							/>
+						))}
+					</div>
+					<button
+						className={style.filter__button}
+						onClick={removeAllFilters}
+					>
+						Clear
+					</button>
+				</section>
+			)}
+		</div>
+	);
+}
+
+export default Filter;

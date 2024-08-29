@@ -1,0 +1,16 @@
+.label {
+	padding: 0.6rem;
+	border-radius: 20px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.newLabel {
+	background-color: var(--desaturated-dark);
+	color: white;
+}
+
+.featured {
+	background-color: hsl(180, 14%, 20%);
+	color: white;
+}

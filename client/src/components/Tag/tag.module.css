@@ -1,0 +1,20 @@
+.tag {
+	background-color: var(--light-grayish-background);
+	color: var(--desaturated-dark);
+	padding: 0.5rem;
+	border-radius: 5px;
+	font-weight: 700;
+	font-size: large;
+	display: flex;
+	align-items: center;
+}
+
+.tag:hover {
+	cursor: pointer;
+	color: var(--light-grayish-background);
+	background-color: var(--desaturated-dark);
+	padding: 0.5rem;
+	border-radius: 5px;
+	font-weight: 700;
+	font-size: large;
+}
