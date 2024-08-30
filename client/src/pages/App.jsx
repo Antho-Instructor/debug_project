@@ -4,19 +4,19 @@ import Job from "../components/Job";
 import { useJobs } from "../hooks/useJobs";
 
 function App() {
-	const { filteredJobs } = useJobs();
+  const { filteredJobs } = useJobs();
 
-	return (
-		<section>
-			<Header />
-			<Filter />
-			<div>
-				{filteredJobs.map((job, idx) => (
-					<Job key={idx} job={job} />
-				))}
-			</div>
-		</section>
-	);
+  return (
+    <section>
+      <Header />
+      <Filter />
+      <div>
+        {filteredJobs.map((job) => (
+          <Job job={job} />
+        ))}
+      </div>
+    </section>
+  );
 }
 
 export default App;

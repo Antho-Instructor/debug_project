@@ -4,15 +4,15 @@ import useWindowWidth from "../../hooks/useWindowWidth";
 import style from "./header.module.css";
 
 function Header() {
-	const windowWidth = useWindowWidth();
+  const windowWidth = useWindowWidth();
 
-	const backgroundImage = windowWidth >= 375 ? bgDesktop : bgMobile;
+  const backgroundImage = windowWidth >= 375 ? bgDesktop : bgMobile;
 
-	return (
-		<header>
-			<img src={backgroundImage} alt="header" className={style.header} />
-		</header>
-	);
+  return (
+    <header>
+      <img src={bgMobile} alt="header" className={style.header} />
+    </header>
+  );
 }
 
 export default Header;
